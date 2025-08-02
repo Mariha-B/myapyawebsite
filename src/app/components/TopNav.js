@@ -7,8 +7,8 @@ import { SiDiscord } from "react-icons/si";
 export default function TopNav() {
   const [open, setOpen] = useState(false);
   return (
-
-    <nav className="w-full flex items-center justify-between px-4 py-3 bg-transparent relative">
+    <div className="w-full flex justify-center">
+      <nav className="w-full max-w-6xl flex items-center pl-1 pr-4 justify-between py-3 bg-transparent relative">
       {/* Logo and Title */}
       <div className="flex items-center z-20">
         <img src="/logo.png" alt="MyaPya Logo" className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover" />
@@ -63,6 +63,7 @@ export default function TopNav() {
           </nav>
         </div>
       )}
-    </nav>
+      </nav>
+    </div>
   );
 }

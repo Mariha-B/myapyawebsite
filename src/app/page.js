@@ -144,7 +144,7 @@ export default function Home() {
             I kept hearing <span className="font-bold text-accent-blue">terms I didn’t fully understand</span> and constantly felt like I was <span className="font-bold text-accent-blue">playing catch-up</span>.
           </p>
           <div className="flex justify-center my-4">
-            <span className="inline-block w-16 h-1 rounded-full bg-accent-blue/80"></span>
+            <div className="w-48 h-0 border-b-4 border-primary/80 border-dashed mx-auto"></div>
           </div>
           <p className="mb-2">
             To make sense of it all, I started creating short, <span className="font-bold text-accent-blue">clear explainer videos</span> – and quickly realised they weren’t just helping me. They were helping other people in tech who didn’t have time to sit through hour-long tutorials.
@@ -161,7 +161,7 @@ export default function Home() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.7, ease: 'easeOut', delay: 0.18 }}
-        className="py-2 md:py-4 lg:py-6 px-6 flex flex-col items-center"
+        className="py-8 md:py-14 lg:py-20 px-6 flex flex-col items-center"
       >
         <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-10 [font-family:var(--font-league-spartan)]">Watch my most popular videos</h2>
         <div className="w-full max-w-2xl lg:max-w-6xl relative overflow-visible">
