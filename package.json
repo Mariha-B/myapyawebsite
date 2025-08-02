@@ -2,9 +2,13 @@
   "name": "myapyawebsite",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
+ "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "clean": "rimraf docs",
+    "copy": "cpy \"out/**/*\" docs --parents",
+    "add-cname": "echo myapya.com > docs/CNAME",
+    "deploy": "npm run build && npm run clean && npm run copy && npm run add-cname",
     "start": "next start",
     "lint": "next lint"
   },
@@ -17,6 +21,8 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "cpy-cli": "^5.0.0",
+    "rimraf": "^6.0.1",
     "tailwindcss": "^4"
   }
 }
