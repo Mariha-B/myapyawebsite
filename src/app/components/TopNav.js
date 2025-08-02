@@ -17,13 +17,13 @@ export default function TopNav() {
 
       {/* Social Icons (right-aligned on desktop, below nav on mobile when open) */}
       <div className="flex items-center gap-3 z-10">
-        <a href="https://instagram.com/itsmyapya" aria-label="Instagram" className="hover:text-accent-pink">
+        <a href="https://instagram.com/itsmyapya" aria-label="Instagram" className="hover:text-accent-pink" target="_blank" rel="noopener noreferrer">
           <FaInstagram size={22} />
         </a>
-        <a href="https://youtube.com/@myapya" aria-label="YouTube" className="hover:text-accent">
+        <a href="https://youtube.com/@myapya" aria-label="YouTube" className="hover:text-accent" target="_blank" rel="noopener noreferrer">
           <FaYoutube size={22} />
         </a>
-        <a href="discord.gg/Sq4wxqFsZP" aria-label="Discord" className="hover:text-purple">
+        <a href="https://discord.gg/Sq4wxqFsZP" aria-label="Discord" className="hover:text-purple" target="_blank" rel="noopener noreferrer">
           <SiDiscord size={22} />
         </a>
       </div>

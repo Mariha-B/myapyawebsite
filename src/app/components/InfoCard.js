@@ -1,10 +1,12 @@
 import Link from "next/link";
 
 export default function InfoCard({ icon, title, description, href, cta = "Go here", className = "" }) {
+  const isExternal = href?.startsWith('http');
   return (
     <Link
       href={href}
       className={`group block rounded-2xl bg-beige p-6 md:p-8 lg:p-10 shadow-md transition-transform duration-200 hover:scale-105 hover:shadow-[8px_8px_0_0_var(--color-accent-pink)] focus:scale-105 focus:shadow-[8px_8px_0_0_var(--color-accent-pink)] outline-none min-h-[180px] md:min-h-[220px] lg:min-h-[320px] xl:min-h-[400px] ${className}`}
+      {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer', tabIndex: 0, 'aria-label': title + ' (opens in new tab)' } : {})}
     >
       <div className="flex flex-col justify-between items-start gap-3 h-full w-full">
         <div>
