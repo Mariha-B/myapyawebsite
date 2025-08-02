@@ -11,7 +11,7 @@ export default function TopNav() {
       <nav className="w-full max-w-6xl flex items-center pl-1 pr-4 justify-between py-3 bg-transparent relative">
       {/* Logo and Title */}
       <div className="flex items-center z-20">
-        <img src="/logo.png" alt="MyaPya Logo" className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover" />
+        <img src="./logo.png" alt="MyaPya Logo" className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover" />
         <span className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight [font-family:var(--font-league-spartan)]">MyaPya.com</span>
       </div>
 
